@@ -1,0 +1,107 @@
+{
+  "version": 1,
+  "author": "Zeynep Tüfek",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "wokwi-breadboard", "id": "bb1", "top": 304.2, "left": -266, "attrs": {} },
+    { "type": "wokwi-esp32-devkit-v1", "id": "esp", "top": 91.1, "left": 244.6, "attrs": {} },
+    {
+      "type": "wokwi-stepper-motor",
+      "id": "stepper1",
+      "top": -130.79,
+      "left": 403.63,
+      "attrs": { "size": "17", "arrow": "" }
+    },
+    { "type": "wokwi-a4988", "id": "drv1", "top": 216, "left": 398.4, "attrs": {} },
+    { "type": "wokwi-vcc", "id": "vcc1", "top": 451.96, "left": 355.2, "attrs": {} },
+    { "type": "wokwi-gnd", "id": "gnd1", "top": 462.2, "left": 374.2, "rotate": 180, "attrs": {} },
+    {
+      "type": "wokwi-servo",
+      "id": "servo1",
+      "top": 170,
+      "left": -93.2,
+      "rotate": 180,
+      "attrs": {"hornColor": "Red", "text": "Thumb"}
+    },
+    {
+      "type": "wokwi-servo",
+      "id": "servo8",
+      "top": 74,
+      "left": -93.2,
+      "rotate": 180,
+      "attrs": {"hornColor": "Green"}
+    },
+    {
+      "type": "wokwi-servo",
+      "id": "servo2",
+      "top": -242.8,
+      "left": -93.2,
+      "rotate": 180,
+      "attrs": {"hornColor": "Pink"}
+    },
+    {
+      "type": "wokwi-servo",
+      "id": "servo3",
+      "top": -22,
+      "left": -93.2,
+      "rotate": 180,
+      "attrs": {"hornColor": "Yellow"}
+    },
+    {
+      "type": "wokwi-servo",
+      "id": "servo4",
+      "top": -137.2,
+      "left": -93.2,
+      "rotate": 180,
+      "attrs": {"hornColor": "Orange"}
+    },
+    {
+      "type": "wokwi-servo",
+      "id": "servo5",
+      "top": -338.8,
+      "left": -93.2,
+      "rotate": 180,
+      "attrs": {"hornColor": "Red"}
+    },
+    { "type": "wokwi-vcc", "id": "vcc2", "top": 240.76, "left": 518.4, "attrs": {} },
+    { "type": "wokwi-gnd", "id": "gnd2", "top": 251, "left": 537.4, "rotate": 180, "attrs": {} }
+  ],
+  "connections": [
+    [ "esp:TX0", "$serialMonitor:RX", "", [] ],
+    [ "esp:RX0", "$serialMonitor:TX", "", [] ],
+    [ "stepper1:A-", "drv1:2B", "green", [ "v22.46", "h62.03", "v57.33" ] ],
+    [ "stepper1:A+", "drv1:2A", "green", [ "v28.8", "h67.76", "v48", "h-58.16", "v124.72" ] ],
+    [ "stepper1:B+", "drv1:1A", "green", [ "v7.8", "h72.83", "v86" ] ],
+    [ "stepper1:B-", "drv1:1B", "green", [ "v1.13", "h-0.01", "v219.59" ] ],
+    [ "drv1:SLEEP", "drv1:RESET", "green", [ "h-20.1", "v-12.73", "h9.33" ] ],
+    [ "drv1:STEP", "esp:D23", "green", [ "h-39.86", "v-147.32" ] ],
+    [ "gnd1:GND", "bb1:bn.50", "black", [ "v0" ] ],
+    [ "vcc1:VCC", "bb1:bp.50", "red", [ "v0" ] ],
+    [ "bb1:bp.1", "bb1:tp.1", "red", [ "h-29.6", "v-174" ] ],
+    [ "bb1:bn.1", "bb1:tn.1", "black", [ "h-39.2", "v-174" ] ],
+    [ "esp:D22", "drv1:DIR", "green", [ "h38.1", "v66.9" ] ],
+    [ "bb1:tn.28", "servo1:GND", "black", [ "v0" ] ],
+    [ "bb1:tn.29", "servo8:GND", "black", [ "v0" ] ],
+    [ "bb1:tn.30", "servo3:GND", "black", [ "v0" ] ],
+    [ "bb1:tn.31", "servo4:GND", "black", [ "v0" ] ],
+    [ "servo2:GND", "bb1:tn.32", "black", [ "h0" ] ],
+    [ "servo5:GND", "bb1:tn.33", "black", [ "h0" ] ],
+    [ "servo1:V+", "bb1:tp.28", "red", [ "h0" ] ],
+    [ "servo8:V+", "bb1:tp.29", "red", [ "h0" ] ],
+    [ "servo3:V+", "bb1:tp.30", "red", [ "h0" ] ],
+    [ "servo4:V+", "bb1:tp.31", "red", [ "h0" ] ],
+    [ "servo2:V+", "bb1:tp.32", "red", [ "h0" ] ],
+    [ "servo5:V+", "bb1:tp.33", "red", [ "h0" ] ],
+    [ "esp:VIN", "bb1:tp.40", "red", [ "h0" ] ],
+    [ "esp:GND.2", "bb1:tn.39", "black", [ "h0" ] ],
+    [ "drv1:GND.1", "gnd2:GND", "black", [ "v0" ] ],
+    [ "drv1:VDD", "vcc2:VCC", "red", [ "h0" ] ],
+    [ "servo1:PWM", "esp:D14", "green", [ "h115.2", "v-9.8" ] ],
+    [ "servo8:PWM", "esp:D27", "green", [ "h86.4", "v76.6" ] ],
+    [ "servo3:PWM", "esp:D26", "green", [ "h96", "v163" ] ],
+    [ "servo4:PWM", "esp:D25", "green", [ "h105.6", "v268.6" ] ],
+    [ "servo2:PWM", "esp:D33", "green", [ "h115.2", "v364.6" ] ],
+    [ "servo5:PWM", "esp:D32", "green", [ "h124.8", "v451" ] ]
+  ],
+  "dependencies": {}
+}
