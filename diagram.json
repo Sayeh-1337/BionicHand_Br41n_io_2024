@@ -21,7 +21,7 @@
       "top": 170,
       "left": -93.2,
       "rotate": 180,
-      "attrs": {"hornColor": "Red", "text": "Thumb"}
+      "attrs": { "hornColor": "Red", "text": "Thumb" }
     },
     {
       "type": "wokwi-servo",
@@ -29,7 +29,7 @@
       "top": 74,
       "left": -93.2,
       "rotate": 180,
-      "attrs": {"hornColor": "Green"}
+      "attrs": { "hornColor": "Green" }
     },
     {
       "type": "wokwi-servo",
@@ -37,7 +37,7 @@
       "top": -242.8,
       "left": -93.2,
       "rotate": 180,
-      "attrs": {"hornColor": "Pink"}
+      "attrs": { "hornColor": "Pink" }
     },
     {
       "type": "wokwi-servo",
@@ -45,7 +45,7 @@
       "top": -22,
       "left": -93.2,
       "rotate": 180,
-      "attrs": {"hornColor": "Yellow"}
+      "attrs": { "hornColor": "Yellow" }
     },
     {
       "type": "wokwi-servo",
@@ -53,7 +53,7 @@
       "top": -137.2,
       "left": -93.2,
       "rotate": 180,
-      "attrs": {"hornColor": "Orange"}
+      "attrs": { "hornColor": "Orange" }
     },
     {
       "type": "wokwi-servo",
@@ -61,10 +61,59 @@
       "top": -338.8,
       "left": -93.2,
       "rotate": 180,
-      "attrs": {"hornColor": "Red"}
+      "attrs": { "hornColor": "Red" }
     },
     { "type": "wokwi-vcc", "id": "vcc2", "top": 240.76, "left": 518.4, "attrs": {} },
-    { "type": "wokwi-gnd", "id": "gnd2", "top": 251, "left": 537.4, "rotate": 180, "attrs": {} }
+    { "type": "wokwi-gnd", "id": "gnd2", "top": 251, "left": 537.4, "rotate": 180, "attrs": {} },
+    {
+      "type": "wokwi-led",
+      "id": "led1",
+      "top": 217.2,
+      "left": -111.4,
+      "attrs": { "color": "red", "label": "Thumb" }
+    },
+    {
+      "type": "wokwi-led",
+      "id": "led2",
+      "top": 121.2,
+      "left": -111.4,
+      "attrs": { "color": "green", "label": "Index" }
+    },
+    {
+      "type": "wokwi-led",
+      "id": "led3",
+      "top": 25.2,
+      "left": -111.4,
+      "attrs": { "color": "yellow", "label": "Middle" }
+    },
+    {
+      "type": "wokwi-led",
+      "id": "led4",
+      "top": -90,
+      "left": -111.4,
+      "attrs": { "color": "orange", "label": "Ring" }
+    },
+    {
+      "type": "wokwi-led",
+      "id": "led5",
+      "top": -205.2,
+      "left": -111.4,
+      "attrs": { "color": "magenta", "label": "Little" }
+    },
+    {
+      "type": "wokwi-led",
+      "id": "led6",
+      "top": -291.6,
+      "left": -111.4,
+      "attrs": { "color": "red", "label": "Thumb Articulation" }
+    },
+    {
+      "type": "wokwi-led",
+      "id": "led7",
+      "top": -80.4,
+      "left": 570.2,
+      "attrs": { "color": "white", "label": "Wrist Flextion/Extention" }
+    }
   ],
   "connections": [
     [ "esp:TX0", "$serialMonitor:RX", "", [] ],
