@@ -1,7 +1,7 @@
 
 ---
 
-## ESP32 REST API Server for Bionic Hand Control
+## ESP32 REST API Server for Bionic Hand Control using BCI EEG signals
 
 This project showcases an ESP32 REST API server that allows you to control a bionic hand remotely. The server accepts control requests through a POST method with a JSON payload. Each element in the payload array represents the state of a finger on the bionic hand.
 
