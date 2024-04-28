@@ -5,6 +5,9 @@
 
 This project showcases an ESP32 REST API server that allows you to control a bionic hand remotely. The server accepts control requests through a POST method with a JSON payload. Each element in the payload array represents the state of a finger on the bionic hand.
 
+## Presentation Video
+[Presentation Video](https://youtu.be/v1VJN46kQFo)
+
 ## Demo Video
 Watch this YouTube video for an overview explanation of the project:
 
