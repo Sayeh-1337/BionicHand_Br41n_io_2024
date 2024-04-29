@@ -49,7 +49,7 @@ To control the bionic hand, send a POST request to the server with the following
 In the payload, each element in the `control` array corresponds to a finger on the hand. A value of `1` represents an flexed finger, while `0` represents a extended finger. Adjust the values in the array to control the desired finger positions.
 
 ### Simulation Script 
-under the `hackthon 2024` folder, you can find a `simulation.ipynb` python script that simulate EEG streaming then do predication task and sends a POST request to the server . You can run this script to control the bionic hand in the simulation.
+under the `dl_hackthon_2024` folder, you can find a `simulation.ipynb` python script that simulate EEG streaming then do predication task and sends a POST request to the server . You can run this script to control the bionic hand in the simulation.
 for more interpretation of the AI model architecture and coding you can check the following [link](https://github.com/Ananas120/hackaton_2024) and reach @Ananas120 for more information is the expert.
 
 ```bash
