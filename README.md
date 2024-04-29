@@ -52,6 +52,8 @@ In the payload, each element in the `control` array corresponds to a finger on t
 under the `dl_hackthon_2024` folder, you can find a `simulation.ipynb` python script that simulate EEG streaming then do predication task and sends a POST request to the server . You can run this script to control the bionic hand in the simulation.
 for more interpretation of the AI model architecture and coding you can check the following [link](https://github.com/Ananas120/hackaton_2024) and reach @Ananas120 for more information is the expert.
 
+note: you need to move the pretrained_models folder to the dl_hackthon_2024 directory of the script to run it successfully. also you need to download the [dataset] in data folder 
+you can find the dataset in the following [here](https://figshare.com/collections/A_large_electroencephalographic_motor_imagery_dataset_for_electroencephalographic_brain_computer_interfaces/3917698)
 ```bash
 
 ### Conclusion
