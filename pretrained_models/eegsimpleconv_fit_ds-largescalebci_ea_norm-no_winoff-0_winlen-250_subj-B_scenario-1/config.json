@@ -1,0 +1,52 @@
+{
+    "class_name": "EEGClassifier",
+    "config": {
+        "nom": "eegsimpleconv_fit_ds-largescalebci_ea_norm-no_winoff-0_winlen-250_subj-B_scenario-1",
+        "pretrained_name": null,
+        "architecture_name": "eegsimpleconv",
+        "multi_subjects": false,
+        "rate": 200,
+        "channels": [
+            "Fp1",
+            "Fp2",
+            "F3",
+            "F4",
+            "C3",
+            "C4",
+            "P3",
+            "P4",
+            "O1",
+            "O2",
+            "A1",
+            "A2",
+            "F7",
+            "F8",
+            "T3",
+            "T4",
+            "T5",
+            "T6",
+            "Fz",
+            "Cz",
+            "Pz",
+            "X5"
+        ],
+        "use_ea": true,
+        "mel_fn": null,
+        "csp_fn": null,
+        "max_input_length": 250,
+        "normalization_config": {
+            "normalize": 1,
+            "per_channel": true
+        },
+        "use_fixed_length_input": true,
+        "keep_spatial_information": "auto",
+        "labels": [
+            "index finger (IM)",
+            "middle finger (IM)",
+            "pinkie finger (IM)",
+            "ring finger (IM)",
+            "thumb finger (IM)"
+        ],
+        "nb_class": 5
+    }
+}

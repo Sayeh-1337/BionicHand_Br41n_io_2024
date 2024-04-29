@@ -1,0 +1,59 @@
+{
+    "models": {
+        "model": {
+            "save_path": "pretrained_models/tcnetfusion_fit_ds-largescalebci_ge2e_metric-euclidian_nlab-6_nut-24_dim-64_ea_norm-no_winoff-0_winlen-250_subj-B/saving/model.json",
+            "compiled": true,
+            "optimizer_name": "model_optimizer",
+            "metrics_name": [
+                "model_GE2EMetric"
+            ],
+            "loss_name": "model_loss"
+        }
+    },
+    "losses": {
+        "model_loss": {
+            "loss": "GE2ELoss",
+            "loss_config": {
+                "reduction": "auto",
+                "name": "ge2e_loss",
+                "mode": "softmax",
+                "init_w": -2.1744768619537354,
+                "init_b": -0.003565848106518388,
+                "distance_metric": "euclidian"
+            }
+        }
+    },
+    "metrics": {
+        "model_GE2EMetric": {
+            "metric": "GE2EMetric",
+            "metric_config": {
+                "name": "accuracy",
+                "dtype": "float32",
+                "mode": "softmax",
+                "distance_metric": "euclidian"
+            }
+        }
+    },
+    "optimizers": {
+        "model_optimizer": {
+            "optimizer": "Adam",
+            "optimizer_config": {
+                "name": "Adam",
+                "weight_decay": null,
+                "clipnorm": null,
+                "global_clipnorm": null,
+                "clipvalue": null,
+                "use_ema": false,
+                "ema_momentum": 0.99,
+                "ema_overwrite_frequency": null,
+                "jit_compile": true,
+                "is_legacy_optimizer": false,
+                "learning_rate": 0.0007290000794455409,
+                "beta_1": 0.9,
+                "beta_2": 0.999,
+                "epsilon": 1e-07,
+                "amsgrad": false
+            }
+        }
+    }
+}

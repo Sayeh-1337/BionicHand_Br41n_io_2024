@@ -1,0 +1,4 @@
+{
+    "ids": "pretrained_models/eegsimpleconv_fit_ds-largescalebci_ea_norm-gno_winoff-0_winlen-250_subj-B_scenario-1/saving/ea_ids.json",
+    "matrices": "pretrained_models/eegsimpleconv_fit_ds-largescalebci_ea_norm-gno_winoff-0_winlen-250_subj-B_scenario-1/saving/ea_matrices.npy"
+}

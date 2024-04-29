@@ -1,0 +1,4 @@
+{
+    "ids": "pretrained_models/tcnetfusion_fit_ds-largescalebci_ge2e_metric-euclidian_nlab-6_nut-24_dim-64_ea_norm-no_winoff-0_winlen-250_subj-B_scenario-1/saving/ea_ids.json",
+    "matrices": "pretrained_models/tcnetfusion_fit_ds-largescalebci_ge2e_metric-euclidian_nlab-6_nut-24_dim-64_ea_norm-no_winoff-0_winlen-250_subj-B_scenario-1/saving/ea_matrices.npy"
+}

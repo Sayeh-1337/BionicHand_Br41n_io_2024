@@ -1,0 +1,14 @@
+{
+    "models": {
+        "model": {
+            "save_path": "pretrained_models/tcnetfusion_fit_ds-largescalebci_ge2e_metric-euclidian_norm-no_winoff-0_winlen-250_subj-B_scenario-1/saving/model.json",
+            "compiled": false,
+            "optimizer_name": null,
+            "metrics_name": null,
+            "loss_name": null
+        }
+    },
+    "losses": {},
+    "metrics": {},
+    "optimizers": {}
+}

@@ -1,0 +1,14 @@
+{
+    "models": {
+        "model": {
+            "save_path": "pretrained_models/atcnetv2_fit_ds-largescalebci_ge2e_metric-euclidian_nlab-5_nut-24_dim-64_ea_norm-no_winoff-0_winlen-1125_subj-B/saving/model.json",
+            "compiled": false,
+            "optimizer_name": null,
+            "metrics_name": null,
+            "loss_name": null
+        }
+    },
+    "losses": {},
+    "metrics": {},
+    "optimizers": {}
+}
